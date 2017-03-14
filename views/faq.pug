@@ -1,0 +1,86 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, shrink-to-fit=no, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Simple Sidebar - Start Bootstrap Template
+    link(href='css/bootstrap.css', rel='stylesheet')
+    link(href='css/simple-sidebar.css', rel='stylesheet')
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    #wrapper
+      #sidebar-wrapper
+        ul.sidebar-nav
+          li.sidebar-brand
+            a(href='index.html') home
+          li.sidebar-brand
+            a(href='#') tracks
+          li.sidebar-brand
+            a(href='#') past years
+          li.sidebar-brand
+            a(href='faq.html') faq
+      #page-content-wrapper(style='padding:0px; background-color:#ffffff;')
+        .container-fluid
+          .row.Aligner
+            .col-md-6.col-sm-12.col-xs-12.background_blue
+              div
+                font(color='#ffffff')
+                  h4 Ques1. Where should I register?
+                  h4 Ques2. Where should I register?
+                  h4 Ques3. Where should I register?
+                  h4 Ques4. Where should I register?
+                  h4 Ques5. Where should I register?
+                  h4 Ques6. Where should I register?
+                  h4#q7 Ques7. Where should I register?
+                  h4 Ques8. Where should I register?
+                  h4 Ques9. Where should I register?
+                  h4 Ques10. Where should I register?
+            #solution.col-md-6.col-sm-12.col-xs-12
+              div
+                h4
+                  | Resgister your project idea on this website. We&apos;ll review it and send you mail with your Developer&apos;s Pass. Please brind a copy of this ticket with you when you come for the hack.
+                br
+                h4
+                  | Resgister your project idea on this website. We&apos;ll review it and send you mail with your Developer&apos;s Pass. Please brind a copy of this ticket with you when you come for the hack.
+                br
+                h4#a7
+                  | Resgister your project idea on this website. We&apos;ll review it and send you mail with your Developer&apos;s Pass. Please brind a copy of this ticket with you when you come for the hack.
+                br
+                h4
+                  | Resgister your project idea on this website. We&apos;ll review it and send you mail with your Developer&apos;s Pass. Please brind a copy of this ticket with you when you come for the hack.
+                br
+                h4
+                  | Resgister your project idea on this website. We&apos;ll review it and send you mail with your Developer&apos;s Pass. Please brind a copy of this ticket with you when you come for the hack.
+                br
+                h4
+                  | Resgister your project idea on this website. We&apos;ll review it and send you mail with your Developer&apos;s Pass. Please brind a copy of this ticket with you when you come for the hack.
+                br
+                h4
+                  | Resgister your project idea on this website. We&apos;ll review it and send you mail with your Developer&apos;s Pass. Please brind a copy of this ticket with you when you come for the hack.
+                br
+                h4
+                  | Resgister your project idea on this website. We&apos;ll review it and send you mail with your Developer&apos;s Pass. Please brind a copy of this ticket with you when you come for the hack.
+                br
+                h4
+                  | Resgister your project idea on this website. We&apos;ll review it and send you mail with your Developer&apos;s Pass. Please brind a copy of this ticket with you when you come for the hack.
+    script(src='js/jquery.js')
+    script(src='js/bootstrap.min.js')
+    script.
+      $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+      });
+    script.
+      function scroll_to_solution()
+      {
+      $('#solution').animate({scrollTop: div_terms.top}, "slow");
+      }
+      var div_terms = $('#a7').offset();
+      $("#q7").click(function (){
+      scroll_to_solution();
+      });

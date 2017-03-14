@@ -1,10 +1,12 @@
 var express = require('express');
 var router = express.Router();
-var passport = require('passport');
-var bcrypt = require('bcrypt');
 var User = require('../model/user');
 
 var redirectURL = "https://academics.vit.ac.in/online_application2/onlinepayment/Online_pay_request1.asp";
+
+router.get('/', function(req, res) {
+  res.render('index');
+});
 
 router.post('/submit', function(req, res) {
   var newUser;

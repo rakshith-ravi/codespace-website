@@ -1,0 +1,96 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, shrink-to-fit=no, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Codespace
+    link(href='https://fonts.googleapis.com/css?family=Fira+Sans', rel='stylesheet')
+    link(href='css/bootstrap.css', rel='stylesheet')
+    link(href='css/simple-sidebar.css', rel='stylesheet')
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    link(rel='stylesheet prefetch', href='https://dl.dropboxusercontent.com/s/f8koknynsnp9d2k/owl.theme.default.min.css?dl=1')
+    link(rel='stylesheet prefetch', href='https://dl.dropboxusercontent.com/s/npj0ketud6mhy0l/owl.carousel.min.css?dl=0')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', type='text/css', href='css/javascript.fullPage.css')
+    link(rel='stylesheet', href='animate.css')
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD_IObY48zCuzX_-syqyszGdqFZG6O0oX4&sensor=false')
+    script(src='js/map.js')
+  body
+    #wrapper
+      #sidebar-wrapper
+        ul.sidebar-nav(style='height: 85%;')
+          li.sidebar-brand
+            a(href='index.html') home
+          li.sidebar-brand
+            a(href='#') tracks
+          li.sidebar-brand
+            a(href='#') past years
+          li.sidebar-brand
+            a(href='faq.html') faq
+          li
+            .row.bottom-align-text-nav(style='width: 100%; margin-bottom: 40%')
+              .col-md-4.col-sm-4.icon
+                a(href='https://www.facebook.com/csivit/?fref=ts', target='_blank')
+                  img.social(src='social_icon/facebook.png')
+              .col-md-4.col-sm-4.icon
+                a(href='https://twitter.com/csivitu', target='_blank')
+                  img.social(src='social_icon/twitter.png')
+              .col-md-4.col-sm-4.icon
+                a(href='https://github.com/csivit', target='_blank')
+                  img.social(src='social_icon/github.png')
+          li.sidebar-brand.bottom-align-text-nav
+            a(href='#') contact us
+      #fullpage
+        #page-content-wrapper-reg.section
+          .container-fluid
+            p(style='opacity: 0.6; font-size: 25px; text-align: center') Make Payment
+            .row.form_reg
+              .col-sm-12.col-xs-12.col-sm-12
+                form#form.form-horizontal(name='submit', action='#', method='post')
+                  .form-group(style='margin-bottom: 2.5%')
+                    #name_div.col-md-12.col-xs-12.col-sm-12
+                      input#name.form-control(type='text', name='name', placeholder='NAME', required='required')
+                  .form-group(style='margin-bottom: 2.5%')
+                    #email_div.col-md-12.col-xs-12.col-sm-12
+                      input#email.form-control(type='email', name='email', placeholder='E-MAIL', required='required')
+                  .row(style='margin-bottom: 2%')
+                    center
+                      .col-lg-6.col-xs-12.col-md-6(style='color: #ffffff; text-align: center')
+                        h4 Are You a VIT student :
+                      .col-lg-6.col-xs-12.col-md-6
+                        .input-group(style='width: 30px;')
+                          span.input-group-addon(style='background-color: #0093fc; border: 2px solid #7ccaf6; border-radius: 2px')
+                            input#theCheckbox(type='checkbox', aria-label='...')
+                  .form-group(style='margin-bottom: 2.5%')
+                    #reg_no_div.col-md-12.col-xs-12.col-sm-12
+                      input#reg_no.form-control(type='text', pattern='^[1-9]{1}[0-9]{1}[A-Za-z]{3}[0-9]{4}$', style='background-color: #0093fc', placeholder='REGISTRATION No.', required='required', disabled='')
+                  .form-group(style='margin-bottom: 2.5%')
+                    #uni_name_div.col-md-12.col-xs-12.col-sm-12
+                      input#uni_name.form-control(type='email', style='background-color: #0093fc', placeholder='UNIVERSITY / INSTITUTION NAME', required='required', disabled='')
+                  .form-group(style='margin-top: 2vh;')
+                    .col-md-4.col-xs-12.col-sm-12
+                      center
+                        button.btn.btn-send(type='submit')
+                          center Proceed To Pay
+    script(src='js/jquery.js')
+    script(src='js/bootstrap.min.js')
+    script.
+      $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+      });
+    script(src='https://dl.dropboxusercontent.com/s/bnuvg4ad3vl7nop/owl.carousel.min.js?dl=1')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='js/index.js')
+    script(type='text/javascript', src='js/javascript.fullPage.js')
+    script(type='text/javascript').
+      fullpage.initialize('#fullpage', {
+      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+      menu: '#menu',
+      css3:true
+      });
